@@ -48,7 +48,7 @@
     --color-extra00: #000000;
     --color-extra01: #FFFFFF;
     --color-extra02: #707070;
-    --color-success: #042d12;
+    --color-success: #52b788;
 }
 
 /*====== Font Family =====*/
@@ -64,6 +64,7 @@
     font-style: none;
     font-family: 'Bai Jamjuree', sans-serif;
     overflow: hidden;
+    outline: none;
   }
 
   input[type="submit"]{
@@ -170,7 +171,31 @@
     align-self: center;
   }
 
+  .error{
+    font-size: 14px;
+    padding: 0;
+  }
 
+  /* form validation error */
+
+  input.invalid {
+    border: 2px solid var(--color-danger);
+  }
+  
+  .error {
+    color: var(--color-danger);
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .invalid input{
+    border: 2px solid var(--color-danger);
+  }
+
+  /* form validation success */
+  input.valid{
+    border: 2px solid var(--color-success);
+  }
 
 @media (max-width: 920px){
 
